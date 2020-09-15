@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShop", "BethanysPieShop\BethanysPieShop.csproj", "{F9CB5B8B-AF99-4284-9932-7A9DF879B5D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4A55966B-08BD-40BD-97C4-A37466F9556C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShop.Test", "test\PieShop.Test\PieShop.Test.csproj", "{2D60E8C0-363A-475D-929E-5766894749C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9CB5B8B-AF99-4284-9932-7A9DF879B5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB5B8B-AF99-4284-9932-7A9DF879B5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB5B8B-AF99-4284-9932-7A9DF879B5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB5B8B-AF99-4284-9932-7A9DF879B5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D60E8C0-363A-475D-929E-5766894749C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D60E8C0-363A-475D-929E-5766894749C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D60E8C0-363A-475D-929E-5766894749C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D60E8C0-363A-475D-929E-5766894749C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D60E8C0-363A-475D-929E-5766894749C3} = {4A55966B-08BD-40BD-97C4-A37466F9556C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05F1EDCD-F5AC-4A05-8340-97EEF51B09FA}
+	EndGlobalSection
+EndGlobal
