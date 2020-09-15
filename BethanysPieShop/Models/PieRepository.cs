@@ -23,7 +23,13 @@ namespace BethanysPieShop.Models
             }
         }
 
-        public IEnumerable<Pie> PiesOfTheWeek => throw new NotImplementedException();
+        public IEnumerable<Pie> PiesOfTheWeek
+        {
+            get
+            {
+                return _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
+            }
+        }
 
         public Pie GetPieById(int pieId)
         {
