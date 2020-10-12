@@ -21,10 +21,17 @@ namespace PieShop.Test
             pieRepo.Setup(c => c.AllPies).Returns(It.IsAny<List<Pie>>());
             var categoryRepo = new Mock<ICategoryRepository>();
 
+            var category = new Category
+            {
+                CategoryId = 1,
+                CategoryName = "Seasonal pies",
+                Description = "Get in the mood for a seasonal pie"
+            };
+
             var controller = new PieController(pieRepo.Object, categoryRepo.Object);
             // Act
 
-            var result = controller.List();
+            var result = controller.List(category.CategoryName);
 
             // Assert
             var viewResult = Assert.IsType<PiesListViewModel>(result.Model);
@@ -55,7 +62,7 @@ namespace PieShop.Test
             var controller = new PieController(pieRepo.Object, categoryRepo.Object);
             // Act
 
-            var result = controller.List();
+            var result = controller.List("");
 
             // Assert
             //var viewResult = Assert.IsType<PiesListViewModel>(result.Model);

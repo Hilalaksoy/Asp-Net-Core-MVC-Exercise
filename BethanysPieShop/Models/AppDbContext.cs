@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BethanysPieShop.Models
 {
@@ -18,6 +19,17 @@ namespace BethanysPieShop.Models
 
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
 
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+
+        //    modelBuilder.Entity<Category>().HasData(new Category
+        //        {CategoryId = 1, CategoryName = "Fruit pies", Description = "All-fruit pies"});
+        //}
     }
 }
